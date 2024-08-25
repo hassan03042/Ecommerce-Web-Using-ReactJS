@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100;
+  @apply text-gray-900;
+  @apply font-sans;
+  @apply leading-relaxed;
+  @apply tracking-wide;
+  @apply antialiased;
+
+}
+
+.categorydiv {
+  text-align: center; /* Center align the buttons */
+}
+
+.catheading {
+  font-size: 1.0em;
+  font-weight: bold;
+  margin: 15px; /* Adjust margin as needed */
+  background-color: #dddddd;
+  border-radius: 20px;
+  padding: 11px 10px; /* Adjust padding as needed */
+  display: inline-block;
+  overflow: hidden; /* Ensures text stays within button boundaries */
+  white-space: nowrap; /* Prevents text from wrapping */
+  transition: all 0.3s ease; /* Smooth transition for animation */
+  box-shadow: 0 4px 8px rgb(45, 48, 48); /* Optional: Add shadow for depth */
+}
+
+.catheading:hover {
+  transform: scale(1.1); /* Example of hover animation */
+}
+
+
+aside {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+aside button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+aside button:hover {
+    background-color: #0056b3;
+}
+
+.pricefilter {
+  align-items: center;
+  justify-content: center;
+}
